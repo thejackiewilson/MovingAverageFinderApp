@@ -1,12 +1,13 @@
-from flask import Flask, render_template, request
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import io
 import base64
+from flask import Flask, render_template, request
+from flask_lambda import FlaskLambda
 
-app = Flask(__name__)
+app = FlaskLambda(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
