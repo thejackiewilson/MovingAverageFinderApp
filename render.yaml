@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: moving-average-finder
+    env: python
+    buildCommand: pip install -r requirements.txt && python -m compileall app.py
+    startCommand: python app.py
+    pythonVersion: 3.8.12
