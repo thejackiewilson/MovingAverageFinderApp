@@ -1,0 +1,8 @@
+[build]
+  command = "echo 'No build step needed for Flask'"
+  publish = "static"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
